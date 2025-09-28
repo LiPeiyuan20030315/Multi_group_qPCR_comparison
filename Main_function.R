@@ -46,9 +46,7 @@ Data_summary<-df_long %>% group_by(rep,group,target) %>% summarise(Cq=mean(value
 NC<-"GAPDH"
 Target<-"TTN"
 Ctrl_group<-"Non-target control"
-#Rank<-c("Non-target control","tig-TTN-1","tig-TTN-2","tig-TTN-3","TIGR-3×TTN")
-#Rank<-c("Non-target control","tig-HBB-1","tig-HBB-2","tig-HBB-3","tig-HBB-4","tig-HBB-5","TIGR-2×HBB-1","TIGR-2×HBB-2","TIGR-2×HBB-3","TIGR-3×HBB-1","TIGR-3×HBB-2","TIGR-5×HBB")
-Rank<-c("Non-target control","TIGR-TTN-HBB")
+#Rank<-c("Non-target control","TTN-1","TTN-2","TTN-3")
 
 ## Colname
 colnames(Data_summary)<-c("rep","group","target","cq")
